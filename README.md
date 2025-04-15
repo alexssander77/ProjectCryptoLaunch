@@ -1,5 +1,29 @@
-<h1>Trabalho d Redes</h1>
+# 🚀 CryptoLaunch - Crypto Candlestick Tracker (BTC/BRL - Binance API)
 
----
+**CryptoLaunch** é uma aplicação em **React** que exibe um **gráfico de candles em tempo real** para o par **BTC/BRL**. Utiliza dados da API pública da Binance e renderização com **ApexCharts**.
 
-<h2>Consumindo API de Criptomoedas</h2>
+## 🔍 Funcionalidades
+
+- Gráfico de candles (candlestick) com visualização interativa
+- Dados históricos e em tempo real da Binance (via REST e WebSocket)
+- Atualização automática com novo candle a cada 1 minuto
+- Suporte a múltiplas moedas via URL (`?moeda=ETHBRL`, por exemplo)
+
+## ⚙️ Tecnologias Utilizadas
+
+- [React](https://reactjs.org/)
+- [ApexCharts via react-apexcharts](https://apexcharts.com/docs/react-charts/)
+- [Binance REST API](https://binance-docs.github.io/apidocs/spot/en/#kline-candlestick-data)
+- [Binance WebSocket API](https://binance-docs.github.io/apidocs/spot/en/#kline-candlestick-streams)
+- `react-use-websocket`
+
+## 🖼️ Exemplo de gráfico
+
+```jsx
+<ApexCharts
+  options={options}
+  series={[{ data: props.data }]}
+  type="candlestick"
+  width={800}
+  height={600}
+/>
