@@ -19,7 +19,7 @@
 
 ## 🖼️ Exemplo de gráfico
 
-
+![image](https://github.com/user-attachments/assets/889c1d1a-048f-405b-bddd-63d645964fe0)
 
 
 
