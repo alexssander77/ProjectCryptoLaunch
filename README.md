@@ -19,11 +19,7 @@
 
 ## 🖼️ Exemplo de gráfico
 
-```jsx
-<ApexCharts
-  options={options}
-  series={[{ data: props.data }]}
-  type="candlestick"
-  width={800}
-  height={600}
-/>
+
+
+
+
